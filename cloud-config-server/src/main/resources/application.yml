@@ -1,0 +1,13 @@
+server:
+  port: 9010
+  
+spring:
+  application:
+    name: "Cloud Config Server"
+  cloud:
+    config:
+      server:
+        git:
+          default-label: main
+          uri: "https://github.com/Monishguru/dhl"
+          clone-on-start: true
